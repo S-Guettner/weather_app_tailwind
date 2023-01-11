@@ -1,3 +1,5 @@
+import {apiKey} from "../../nothingToseeHere.js";
+console.log(apiKey);
 /* ========== input ========== */
 let locationInput = document.getElementById("locationInput");
 let city;
@@ -13,4 +15,3 @@ fetch(`http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${cityName}&aqi
     .then(data => document.querySelector(".temperature").innerHTML = (data["current"].temp_c));
 
 
-    import apiKey from "apiKey.js";
