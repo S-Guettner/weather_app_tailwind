@@ -673,3 +673,73 @@ video {
 input:focus{
   outline: 2px solid grey;
 }
+
+.before\:content-\[\'Temperature\'\]::before {
+  --tw-content: 'Temperature';
+  content: var(--tw-content);
+}
+
+.before\:content-\[\'Temperature\:\'\]::before {
+  --tw-content: 'Temperature:';
+  content: var(--tw-content);
+}
+
+.before\:content-\[\'Humidity\:\'\]::before {
+  --tw-content: 'Humidity:';
+  content: var(--tw-content);
+}
+
+.before\:content-\[\'wind\:\'\]::before {
+  --tw-content: 'wind:';
+  content: var(--tw-content);
+}
+
+.after\:content-\[\'_\2197\'\]::after {
+  --tw-content: ' ↗';
+  content: var(--tw-content);
+}
+
+.after\:content-\[\'_\'\]::after {
+  --tw-content: ' ';
+  content: var(--tw-content);
+}
+
+.after\:content-\[\'\'\]::after {
+  --tw-content: '';
+  content: var(--tw-content);
+}
+
+.after\:content-\[\'\B0\'\]::after {
+  --tw-content: '°';
+  content: var(--tw-content);
+}
+
+.after\:content-\[\'\B0 C\'\]::after {
+  --tw-content: '°C';
+  content: var(--tw-content);
+}
+
+.after\:content-\[\'k\'\]::after {
+  --tw-content: 'k';
+  content: var(--tw-content);
+}
+
+.after\:content-\[\'km\'\]::after {
+  --tw-content: 'km';
+  content: var(--tw-content);
+}
+
+.after\:content-\[\'km\/\'\]::after {
+  --tw-content: 'km/';
+  content: var(--tw-content);
+}
+
+.after\:content-\[\'km\/h\'\]::after {
+  --tw-content: 'km/h';
+  content: var(--tw-content);
+}
+
+.after\:content-\[\'\%\'\]::after {
+  --tw-content: '%';
+  content: var(--tw-content);
+}
