@@ -551,6 +551,11 @@ video {
   margin: 0.75rem;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .mb-5 {
   margin-bottom: 1.25rem;
 }
@@ -691,6 +696,26 @@ input:focus{
 
 .before\:content-\[\'wind\:\'\]::before {
   --tw-content: 'wind:';
+  content: var(--tw-content);
+}
+
+.before\:content-\[\'Feels-Like\:\'\]::before {
+  --tw-content: 'Feels-Like:';
+  content: var(--tw-content);
+}
+
+.before\:content-\[\'FeelsLike\:\'\]::before {
+  --tw-content: 'FeelsLike:';
+  content: var(--tw-content);
+}
+
+.before\:content-\[\'Feelslike\:\'\]::before {
+  --tw-content: 'Feelslike:';
+  content: var(--tw-content);
+}
+
+.before\:content-\[\'Feels-like\:\'\]::before {
+  --tw-content: 'Feels-like:';
   content: var(--tw-content);
 }
 

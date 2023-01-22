@@ -26,23 +26,28 @@ let dataFetch = (cityName) =>{
     /* temp */
     fetch(`http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${cityName}&aqi=no`)
     .then(response => response.json())
-    .then(data => console.log((data["current"].temp_c)));
+    .then(data => temp.innerHTML = ((data["current"].temp_c)));
     /* feels like temp */
     fetch(`http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${cityName}&aqi=no`)
     .then(response => response.json())
-    .then(data => console.log((data["current"].feelslike_c)));
+    .then(data => feelsLikeTemp.innerHTML = ((data["current"].feelslike_c)));
     /* humidity */
     fetch(`http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${cityName}&aqi=no`)
     .then(response => response.json())
-    .then(data => console.log((data["current"].humidity)));
+    .then(data => humidity.innerHTML = ((data["current"].humidity)));
     /* wind speed */
     fetch(`http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${cityName}&aqi=no`)
     .then(response => response.json())
-    .then(data => console.log((data["current"].wind_mph)));
+    .then(data => windSpeed.innerHTML = ((data["current"].wind_mph)));
+    /* local time */
+    fetch(`http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${cityName}&aqi=no`)
+    .then(response => response.json())
+    .then(data => localTime.innerHTML = ((data["current"].last_updated)));
 }
 
 searchButton.addEventListener('click', () => {
-    let cityName = locationInput.value ;
+    let cityName = locationInput.value;
+    location.innerHTML = cityName;
     console.log(cityName);
     dataFetch(cityName);
 });
