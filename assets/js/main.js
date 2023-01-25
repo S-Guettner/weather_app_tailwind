@@ -2,17 +2,19 @@ import {apiKey} from "../../nothingToseeHere.js";
 /* ========== input ========== */
 /* ========== input ========== */
 /* ========== input ========== */
-let locationInput = document.getElementById("locationInput");
-let searchButton = document.getElementById("searchButton");
+const locationInput = document.getElementById("locationInput");
+const searchButton = document.getElementById("searchButton");
 /* ========== output ========== */
 /* ========== output ========== */
 /* ========== output ========== */
-let location = document.getElementById("location");
-let localTime = document.getElementById("localTime");
-let temp = document.getElementById("temp");
-let feelsLikeTemp = document.getElementById("feelsLikeTemp");
-let humidity = document.getElementById("humidity");
-let windSpeed = document.getElementById("windSpeed");
+const location = document.getElementById("location");
+const localTime = document.getElementById("localTime");
+const temp = document.getElementById("temp");
+const feelsLikeTemp = document.getElementById("feelsLikeTemp");
+const humidity = document.getElementById("humidity");
+const windSpeed = document.getElementById("windSpeed");
+
+const background = document.querySelector("#cardContainer");
 
 
 
@@ -50,6 +52,7 @@ searchButton.addEventListener('click', () => {
     location.innerHTML = cityName;
     console.log(cityName);
     dataFetch(cityName);
+    background.style.backgroundImage=`url(https://source.unsplash.com/random/1920×1080/?${cityName})`;
 });
 
 
