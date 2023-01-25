@@ -551,11 +551,6 @@ video {
   margin: 0.75rem;
 }
 
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .mb-5 {
   margin-bottom: 1.25rem;
 }
@@ -679,13 +674,13 @@ input:focus{
   outline: 2px solid grey;
 }
 
-.before\:content-\[\'Temperature\'\]::before {
-  --tw-content: 'Temperature';
+.before\:content-\[\'Temperature\:\'\]::before {
+  --tw-content: 'Temperature:';
   content: var(--tw-content);
 }
 
-.before\:content-\[\'Temperature\:\'\]::before {
-  --tw-content: 'Temperature:';
+.before\:content-\[\'Feels-like\:\'\]::before {
+  --tw-content: 'Feels-like:';
   content: var(--tw-content);
 }
 
@@ -699,72 +694,17 @@ input:focus{
   content: var(--tw-content);
 }
 
-.before\:content-\[\'Feels-Like\:\'\]::before {
-  --tw-content: 'Feels-Like:';
-  content: var(--tw-content);
-}
-
-.before\:content-\[\'FeelsLike\:\'\]::before {
-  --tw-content: 'FeelsLike:';
-  content: var(--tw-content);
-}
-
-.before\:content-\[\'Feelslike\:\'\]::before {
-  --tw-content: 'Feelslike:';
-  content: var(--tw-content);
-}
-
-.before\:content-\[\'Feels-like\:\'\]::before {
-  --tw-content: 'Feels-like:';
-  content: var(--tw-content);
-}
-
-.after\:content-\[\'_\2197\'\]::after {
-  --tw-content: ' ↗';
-  content: var(--tw-content);
-}
-
-.after\:content-\[\'_\'\]::after {
-  --tw-content: ' ';
-  content: var(--tw-content);
-}
-
-.after\:content-\[\'\'\]::after {
-  --tw-content: '';
-  content: var(--tw-content);
-}
-
-.after\:content-\[\'\B0\'\]::after {
-  --tw-content: '°';
-  content: var(--tw-content);
-}
-
 .after\:content-\[\'\B0 C\'\]::after {
   --tw-content: '°C';
   content: var(--tw-content);
 }
 
-.after\:content-\[\'k\'\]::after {
-  --tw-content: 'k';
-  content: var(--tw-content);
-}
-
-.after\:content-\[\'km\'\]::after {
-  --tw-content: 'km';
-  content: var(--tw-content);
-}
-
-.after\:content-\[\'km\/\'\]::after {
-  --tw-content: 'km/';
+.after\:content-\[\'\%\'\]::after {
+  --tw-content: '%';
   content: var(--tw-content);
 }
 
 .after\:content-\[\'km\/h\'\]::after {
   --tw-content: 'km/h';
-  content: var(--tw-content);
-}
-
-.after\:content-\[\'\%\'\]::after {
-  --tw-content: '%';
   content: var(--tw-content);
 }
