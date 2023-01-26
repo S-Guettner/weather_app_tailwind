@@ -16,7 +16,7 @@ const windSpeed = document.getElementById("windSpeed");
 
 const background = document.querySelector("#cardContainer");
 
-
+background.style.backgroundImage=`url(https://source.unsplash.com/random/1920×1080/?berlin)`;
 
 
 
